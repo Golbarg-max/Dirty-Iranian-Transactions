@@ -24,9 +24,15 @@ Analysis of 10,000 Iranian transaction records to identify patterns in success r
 - **SQL Analysis**: Complex queries with JOINs, GROUP BY, CASE statements
 - **Visualization**: Created charts to communicate insights
 
+## Interactive Dashboard
+- View the interactive Tableau dashboard: [Link](https://public.tableau.com/app/profile/golbarg.ghazinour/viz/TransactionAnalysisDashboard_17674947313660/Dashboard1?publish=yes)
+
 ## Files
 - `iranian_transaction_analysis.ipynb` - Main analysis notebook
 - `trx-10k.csv` - Raw transaction data
+- `iranian_transaction_analysis.html` - Exported notebook
+- `transactions_clean.csv` - Cleaned data [Link](https://public.tableau.com/app/profile/golbarg.ghazinour/viz/TransactionAnalysisDashboard_17674947313660/Dashboard1?publish=yes)
+- Tableau Dashboard - 
 
 
 ## Future Improvements
