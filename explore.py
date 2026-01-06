@@ -21,7 +21,7 @@ df_clean['card_type'] = df_clean['card_type'].replace('vsa', 'visa')
 df_clean['city'] = df_clean['city'].str.lower()
 df_clean['city'] = df_clean['city'].str.strip()
 df_clean['city'] = df_clean['city'].replace({
-'thr': 'tehran',
+'thr': 'tehran', 
 'tehr@n': 'tehran',
 'thran': 'tehran'
 })
@@ -48,4 +48,8 @@ sql_query = """INSERT INTO transactions (transaction_id, status, time, card_type
 for index, row in df_clean.iterrows():
     cursor.execute(sql_query, (row['transaction_id'], row['status'], row['time'], row['card_type'], row['city'], row['amount']))
 cnx.commit()
+
+df = pd.read_sql("SELECT * FROM transactions", cnx)
+df.to_csv('transactions_clean.csv', index=False)
+
 cursor.close()
