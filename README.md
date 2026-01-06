@@ -27,6 +27,11 @@ Analysis of 10,000 Iranian transaction records to identify patterns in success r
 ## Interactive Dashboard
 - View the interactive Tableau dashboard: [Link](https://public.tableau.com/app/profile/golbarg.ghazinour/viz/TransactionAnalysisDashboard_17674947313660/Dashboard1?publish=yes)
 
+## R Analysis
+- 'transaction_analysis.R'
+- Data analysis using tidyverse (dplyr, ggplot2)
+- Demonstrates R programming skills for statistical analysis and visualization
+
 ## Files
 - `iranian_transaction_analysis.ipynb` - Main analysis notebook
 - `trx-10k.csv` - Raw transaction data
